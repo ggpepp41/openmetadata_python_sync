@@ -1,0 +1,16 @@
+openmetadata:
+  hostPort: "http://localhost:8585"
+  jwtToken: "REPLACE_WITH_JWT_TOKEN"
+
+# Name of the Pipeline Service under which code pipelines are created
+pipelineServiceName: "code-service"
+
+# Map application names from docstrings to OpenMetadata entities and columns
+applications:
+  # Example application mapping
+  myapp:
+    type: table
+    fqn: "myDbService.myDatabase.mySchema.myTable"
+    columns:
+      field1: "myDbService.myDatabase.mySchema.myTable.column1"
+      field2: "myDbService.myDatabase.mySchema.myTable.column2"
